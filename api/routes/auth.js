@@ -3,8 +3,11 @@ import express from "express";
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.send("hello first request");
+    res.send("hello this is the auth endpoint");
 })
 
+router.get("/register" , (req, res) => {
+    res.send("hello this is the register endpoint");
+})
 
 export default router;
